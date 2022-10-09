@@ -1,0 +1,17 @@
+.body {
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar-tp {
+  padding-top: 30px;
+}
+.navbar-tp .navbar-nav li {
+  padding-left: 50px;
+}
+.navbar-tp .navbar-nav .active {
+  color: #563ad6 !important;
+  font-weight: bold;
+}
+.navbar-tp .navbar-nav .nav-link {
+  color: #02044a;
+}/*# sourceMappingURL=main.css.map */

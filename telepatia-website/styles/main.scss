@@ -1,0 +1,28 @@
+$purple: #563ad6;
+$aqua: #3abad6;
+$navy: #02044a;
+$white: #ffffff;
+$sofpur: #eaeaf4;
+$darpur: #777790;
+$medpur: #b4b5c9;
+$lilpur: #f9f9fb;
+
+.body {
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar-tp {
+  padding-top: 30px;
+  .navbar-nav {
+    li {
+      padding-left: 50px;
+    }
+    .active {
+      color: $purple !important;
+      font-weight: bold;
+    }
+    .nav-link {
+      color: $navy;
+    }
+  }
+}
