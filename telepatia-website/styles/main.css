@@ -10,8 +10,24 @@
 }
 .navbar-tp .navbar-nav .active {
   color: #563ad6 !important;
-  font-weight: bold;
+  font-weight: 500 !important;
 }
 .navbar-tp .navbar-nav .nav-link {
   color: #02044a;
+  font-weight: 400;
+}
+
+.sales .copywriting .header {
+  color: #02044a;
+  font-size: 46px;
+  line-height: 60px;
+  font-weight: 600;
+}
+.sales .copywriting .description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #9b9cb7;
+  font-weight: 400;
+  margin-top: 20px;
+  max-width: 380px;
 }/*# sourceMappingURL=main.css.map */
