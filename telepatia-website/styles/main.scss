@@ -1,5 +1,6 @@
 @import "./colors";
 @import "./buttons";
+@import "./typography";
 
 .body {
   font-family: "Rubik", sans-serif;
@@ -69,9 +70,75 @@
   .master-card {
     padding: 30px;
     border-radius: 22px;
+    margin-bottom: 70px;
+    .btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .item-benefit {
+      margin-bottom: 20px;
+      img {
+        float: left;
+        margin-right: 8px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: map-get($font-weights, medium);
+      }
+    }
+    .name {
+      font-size: 18px;
+      font-weight: map-get($font-weights, medium);
+    }
+    .price {
+      font-size: 36px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-weight: map-get($font-weights, semibold);
+    }
+    .support {
+      font-size: 16px;
+      font-weight: map-get($font-weights, regular);
+      margin-bottom: 40px;
+    }
   }
   .basic-card {
     @extend .master-card;
     background: $white;
+    .name {
+      color: $navy;
+    }
+    .price {
+      color: $navy;
+    }
+    .support {
+      color: $newpur;
+    }
+    .item-benefit {
+      p {
+        color: $navy;
+      }
+    }
+  }
+  .most-card {
+    @extend .master-card;
+    background: $purple;
+    .name {
+      color: $white;
+    }
+    .price {
+      color: $white;
+    }
+    .support {
+      color: #b19fff;
+    }
+    .item-benefit {
+      p {
+        color: $white;
+      }
+    }
+    .btn-primary {
+      background-color: $aqua;
+    }
   }
 }
