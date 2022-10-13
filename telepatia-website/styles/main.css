@@ -1,5 +1,37 @@
+.btn-master, .btn-secondary, .btn-primary {
+  padding: 15px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 0;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #563ad6;
+}
+
+.btn-secondary {
+  color: #777790;
+  background: #eaeaf4;
+}
+
 .body {
   font-family: "Rubik", sans-serif;
+}
+
+.header {
+  color: #02044a;
+  font-size: 46px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 30px;
+  color: #9b9cb7;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 .navbar-tp {
@@ -17,17 +49,40 @@
   font-weight: 400;
 }
 
+.sales {
+  padding-top: 90px;
+}
+.sales .brand {
+  margin-top: 70px;
+}
+.sales .brand .brand-logos {
+  width: 724px;
+}
+.sales .copywriting {
+  padding-left: 130px;
+}
 .sales .copywriting .header {
-  color: #02044a;
-  font-size: 46px;
-  line-height: 60px;
-  font-weight: 600;
+  margin-top: 100px;
 }
 .sales .copywriting .description {
-  font-size: 18px;
-  line-height: 30px;
-  color: #9b9cb7;
-  font-weight: 400;
-  margin-top: 20px;
   max-width: 380px;
+  margin-bottom: 40px;
+}
+
+.pricing {
+  margin-top: 70px;
+  background-color: #f9f9fb;
+}
+.pricing .header {
+  margin-top: 70px;
+}
+.pricing .description {
+  margin-bottom: 50px;
+}
+.pricing .master-card, .pricing .basic-card {
+  padding: 30px;
+  border-radius: 22px;
+}
+.pricing .basic-card {
+  background: #ffffff;
 }/*# sourceMappingURL=main.css.map */

@@ -1,21 +1,23 @@
-$purple: #563ad6;
-$aqua: #3abad6;
-$navy: #02044a;
-$white: #ffffff;
-$sofpur: #eaeaf4;
-$darpur: #777790;
-$medpur: #b4b5c9;
-$lilpur: #f9f9fb;
-$newpur: #9b9cb7;
-
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "semibold": 600,
-);
+@import "./colors";
+@import "./buttons";
 
 .body {
   font-family: "Rubik", sans-serif;
+}
+
+.header {
+  color: $navy;
+  font-size: 46px;
+  line-height: 60px;
+  font-weight: map-get($font-weights, semibold);
+}
+
+.description {
+  font-size: 16px;
+  line-height: 30px;
+  color: $newpur;
+  font-weight: map-get($font-weights, regular);
+  margin-top: 20px;
 }
 
 .navbar-tp {
@@ -36,20 +38,40 @@ $font-weights: (
 }
 
 .sales {
+  padding-top: 90px;
+  .brand {
+    margin-top: 70px;
+    .brand-logos {
+      width: 724px;
+    }
+  }
   .copywriting {
+    padding-left: 130px;
     .header {
-      color: $navy;
-      font-size: 46px;
-      line-height: 60px;
-      font-weight: map-get($font-weights, semibold);
+      margin-top: 100px;
     }
     .description {
-      font-size: 18px;
-      line-height: 30px;
-      color: $newpur;
-      font-weight: map-get($font-weights, regular);
-      margin-top: 20px;
       max-width: 380px;
+      margin-bottom: 40px;
     }
+  }
+}
+
+.pricing {
+  margin-top: 70px;
+  background-color: $lilpur;
+  .header {
+    margin-top: 70px;
+  }
+  .description {
+    margin-bottom: 50px;
+  }
+  .master-card {
+    padding: 30px;
+    border-radius: 22px;
+  }
+  .basic-card {
+    @extend .master-card;
+    background: $white;
   }
 }
